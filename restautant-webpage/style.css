@@ -1,0 +1,461 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+/* CSS for more than 1 components */
+.content {
+  background: rgba(50, 56, 222, 0.916);
+  height: 40vw;
+  position: absolute;
+  width: 100%;
+}
+.button {
+  margin-top: 5px;
+  padding: 1vw;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+  border: 1px solid rgb(74, 189, 74);
+  border-radius: 1.5vw;
+  color: white;
+  cursor: pointer;
+  font-family: "Baloo Paaji 2", cursive;
+  font-size: 1vw;
+  transition: 0.3s;
+}
+.button:hover {
+  background: rgb(74, 189, 74);
+}
+.heading {
+  font-size: 3.2vw;
+  color: white;
+  text-align: center;
+  margin-top: 2vw;
+  font-family: "Dancing Script", cursive;
+}
+
+/*------------------------- Headers -----------------------------------*/
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  position: fixed;
+  top: 0px;
+  z-index: 1;
+  width: 100%;
+}
+#logo {
+  height: 40px;
+  width: 40px;
+  margin: 0.2vw 0px 0.5vw 0px;
+}
+#nav {
+  position: fixed;
+  top: 0px;
+  z-index: 2;
+  right: 0px;
+  height: 21vw;
+  width: 13vw;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+}
+#toggleButton {
+  position: fixed;
+  top: 0px;
+  z-index: 3;
+  right: 0px;
+}
+#links {
+  display: flex;
+  flex-direction: column;
+  height: 1vw;
+  margin-top: 1vw;
+}
+#links a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  margin: 2vw 0px;
+  font-family: "Dancing Script", cursive;
+  font-size: 1.5vw;
+  color: white;
+  border-radius: 5px;
+}
+#links a:hover {
+  color: black;
+  background: white;
+  font-weight: bold;
+}
+.nav-toggler {
+  min-width: 1vw;
+  height: 1vw;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+  position: fixed;
+  top: 0px;
+  z-index: 3;
+  border: none;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+/*-- Toggler-- */
+.toggler {
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 16px;
+}
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: rgb(235, 229, 229);
+  margin: 6px 0;
+  transition: 0.2s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+  background: rgb(241, 238, 238);
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+  background: rgb(245, 243, 243);
+}
+
+/* -----------------Home-------------- */
+#home::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/home-bg.jpg") no-repeat center/cover;
+  height: 40vw;
+  width: 100%;
+  z-index: -1;
+}
+#home {
+  position: absolute;
+  top: 0px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+#home h1 {
+  font-size: 5vw;
+  font-family: "Dancing Script", cursive;
+  color: white;
+}
+#home p {
+  color: white;
+  font-family: "Caveat", cursive;
+  font-size: 2vw;
+}
+#home-content {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  align-items: center;
+  margin-top: 5vw;
+  top: 6vw;
+}
+
+/* ------------ABOUT---------- */
+.about {
+  top: 40vw;
+  width: 100%;
+}
+#about-part {
+  margin-top: 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#about-img {
+  height: 10vw;
+  width: 15vw;
+  margin: 2vw;
+}
+#about-text {
+  width: 40%;
+  color: white;
+  margin: 1vw;
+  font-family: "Baloo Paaji 2", cursive;
+  font-size: 1.2vw;
+}
+/* --------------MENU---------- */
+.menu {
+  top: 80vw;
+}
+#menu-select {
+  display: flex;
+  justify-content: space-evenly;
+}
+#menu-select button {
+  border: none;
+  font-size: 1.6vw;
+}
+#menu-select button:hover {
+  color: yellow;
+  background: none;
+}
+.menu-items {
+  width: 40%;
+  display: flex;
+  margin: 2% 6%;
+  flex-direction: column;
+}
+.menu-img {
+  height: 5vw;
+  width: 5vw;
+  margin: 2% 1vw;
+}
+.food {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1vw;
+  color: white;
+  font-family: "Baloo Paaji 2", cursive;
+  font-size: 1.2vw;
+}
+#breakfast,
+#lunch,
+#dinner {
+  display: flex;
+}
+/* ------------TEAM---------- */
+.team{
+  top: 120vw;
+}
+.team-box{
+  display: flex;
+  margin-top: 40px;
+  justify-content: space-evenly;
+}
+.team-member{
+  height: 25vw;
+  width: 25vw;
+  background: rgba(50, 56, 222, 0.703);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.4s;
+}
+.team-member:hover{
+  box-shadow: 6px 6px 5px;
+}
+.team-name{
+  font-size: 3.2vw;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  font-family: "Baloo Paaji 2", cursive;
+}
+.team-photo{
+  height: 70%;
+  position: relative;
+  width: 100%;
+  margin: 0px auto;
+  border-radius: 12px;
+}
+/* ------------FOOTER---------- */
+#footer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  top: 160vw;
+}
+#footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.774)),
+    url("../img/footer-bg.jpg") no-repeat center/cover;
+  min-width: 100%;
+  height: 14vw;
+  z-index: -1;
+}
+.footer-content {
+  color: white;
+  line-height: 2;
+  font-family: "Caveat", cursive;
+  font-size: 1vw;
+}
+.footer-part {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: 1.7vw;
+}
+.copyright {
+  margin-top: 2vw;
+  border: 0.5px solid white;
+}
+.copyrightPara {
+  margin: 0.2vw 0;
+  color: white;
+  text-align: center;
+  font-family: "Baloo Paaji 2", cursive;
+  font-size: 1vw;
+}
+@media only screen and (max-width: 1439px) {
+  .menu {
+    height: 50vw;
+  }
+  .team{
+    top: 130vw;
+  }
+  #footer {
+    top: 170vw;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #home::before {
+    height: 75vh;
+  }
+  #home-content {
+    margin-top: 16vw;
+  }
+  .about {
+    height: 53vh;
+    top: 75vh;
+  }
+  #about-text {
+    text-align: center;
+  }
+  #about-img {
+    height: max-content;
+    width: max-content;
+  }
+  #about-text p {
+    font-size: 1.8vw;
+    text-align: center;
+  }
+  .menu {
+    top: 128vh;
+    height: 99vh;
+  }
+  .food {
+    font-size: 8px;
+    justify-content: space-between;
+  }
+  .menu-img {
+    height: 55px;
+    width: 55px;
+  }
+  .team{
+    top: 227vh;
+    height: 80vh;
+  }
+  .team-box{
+    flex-direction: column;
+    align-items: center;
+  }
+  .team-name{
+    margin-top: 8px;
+  }
+  .team-member{
+    height: 19vh;
+    width: 19vh;
+    margin-bottom: 10px;
+  }
+  #breakfast,
+  #lunch,
+  #dinner {
+    flex-direction: column;
+    margin-top: 15px;
+  }
+  #menu-select button {
+    font-size: 3.5vw;
+    z-index: 2;
+  }
+  .heading {
+    font-size: 30px;
+  }
+  .button {
+    font-size: 2vw;
+  }
+  #about-text {
+    font-size: 3.5vw;
+  }
+  #about-part {
+    flex-direction: column;
+  }
+  #about-img {
+    height: 100px;
+    width: 150px;
+  }
+  .menu-items {
+    width: 50%;
+    margin-left: 25vw;
+  }
+  #footer::before {
+    height: 43vh;
+  }
+  #footer {
+    top: 307vh;
+  }
+  .footer-content {
+    font-size: 10px;
+    margin-top: 2vh;
+  }
+  .footer-part {
+    flex-direction: column;
+    align-items: center;
+  }
+  .copyright {
+    margin-top: 15px;
+  }
+  .copyrightPara {
+    font-size: 6px;
+  }
+  #nav {
+    top: 0;
+    height: 38vw;
+    width: 20vw;
+  }
+  #links {
+    margin-top: 40px;
+  }
+  #links a {
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 426px) {
+  #nav {
+    top: 0;
+    height: 72vw;
+    width: 32vw;
+  }
+  #home h1 {
+    font-size: 15vw;
+  }
+  #home p {
+    font-size: 4.9vw;
+  }
+  .menu {
+    top: 137vh;
+  }
+  .team{
+    top: 236vh;
+  }
+  .about {
+    height: 62vh;
+  }
+  #footer {
+    top: 316vh;
+  }
+}

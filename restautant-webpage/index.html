@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dine Out - Restaurant</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&family=Teko:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="row">
+        <div class="logo">
+          <a href="#"><img src="img/logo.png" alt="logo" id="logo" /></a>
+        </div>
+      </div>
+    </header>
+    <button class="nav-toggler" id="toggleButton" type="button">
+      <div class="toggler" onclick="toggle(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </button>
+    <div id="nav">
+      <div id="links" style="display: none">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#team">Our Team</a>
+        <a href="#footer">Reach Us</a>
+      </div>
+    </div>
+    <div id="home">
+      <div id="home-content">
+        <h1>Zaeka</h1>
+        <p>
+          We at Zaeka deliver the food which is not only best in taste, but also
+          keep in mind that it is served at the best price possible without
+          compromising the quality of the food. Do visit at our nearest
+          restaurant to check out our exotic dishes and let us to take you on an
+          exciting and tasteful journey that you may have never been to.
+        </p>
+        <a href="#menu"><button class="button">Our Menu</button></a>
+      </div>
+    </div>
+    <div class="about content" id="about">
+      <h1 class="heading">About Us</h1>
+      <div id="about-part">
+        <div id="about-text">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non odit
+            possimus minus omnis ducimus. Cupiditate, deleniti, sunt veniam
+            soluta dolor numquam cumque, modi mollitia dicta consequuntur illum
+            harum consequatur aut placeat nihil. Adipisci repellat at, est
+            veritatis deserunt molestias quaerat dolor sapiente rerum.
+            <br /><br />
+            Quos totam et explicabo delectus cum deleniti consequatur sit iure
+            odit voluptas eum ex quod placeat ad facilis ratione recusandae
+            doloribus quis, error culpa nulla velit repudiandae quia repellat.
+            Animi ullam nesciunt totam! Quos nulla necessitatibus excepturi?
+          </p>
+          <a href="#menu"><button class="button">Check Menu</button></a>
+        </div>
+        <div>
+          <img src="img/about-img.jpg" id="about-img" alt="About Us" />
+        </div>
+      </div>
+    </div>
+    <div class="menu content" id="menu">
+      <h1 class="heading">Menu</h1>
+      <div id="menu-select">
+        <button class="button" value="breakfast" onclick="menuToggle(value)">
+          BreakFast
+        </button>
+        <button class="button" value="lunch" onclick="menuToggle(value)">
+          Lunch
+        </button>
+        <button class="button" value="dinner" onclick="menuToggle(value)">
+          Dinner
+        </button>
+      </div>
+      <div id="menu-list">
+        <div id="breakfast">
+          <div class="menu-items">
+            <div class="food">
+              <div style="display: flex; align-items: center">
+                <img src="./img/menu/1.jpg" alt="breakfast" class="menu-img" />
+                <h5 class="food-name">Breakfast Item</h5>
+              </div>
+              <h5 class="food-name">Price: 50 &#x20B9;</h5>
+            </div>
+            <div class="food">
+              <div style="display: flex; align-items: center">
+                <img src="./img/menu/2.jpg" alt="breakfast" class="menu-img" />
+                <h5 class="food-name">Breakfast Item</h5>
+              </div>
+              <h5 class="food-name">Price: 50 &#x20B9;</h5>
+            </div>
+            <div class="food">
+              <div style="display: flex; align-items: center">
+                <img src="./img/menu/3.jpg" alt="breakfast" class="menu-img" />
+                <h5 class="food-name">Breakfast Item</h5>
+              </div>
+              <h5 class="food-name">Price: 50 &#x20B9;</h5>
+            </div>
+            <div class="food">
+              <div style="display: flex; align-items: center">
+                <img src="./img/menu/4.jpg" alt="breakfast" class="menu-img" />
+                <h5 class="food-name">Breakfast Item</h5>
+              </div>
+              <h5 class="food-name">Price: 50 &#x20B9;</h5>
+            </div>
+          </div>
+          <div class="menu-items">
+            <div class="food">
+              <div style="display: flex; align-items: center">
+                <img src="./img/menu/5.jpg" alt="breakfast" class="menu-img" />
+                <h5 class="food-name">Breakfast Item</h5>
+              </div>
+              <h5 class="food-name">Price: 50 &#x20B9;</h5>
+            </div>
+            <div class="food">
+              <div style="display: flex; align-items: center">
+                <img src="./img/menu/6.jpg" alt="breakfast" class="menu-img" />
+                <h5 class="food-name">Breakfast Item</h5>
+              </div>
+              <h5 class="food-name">Price: 50 &#x20B9;</h5>
+            </div>
+            <div class="food">
+              <div style="display: flex; align-items: center">
+                <img src="./img/menu/7.jpg" alt="breakfast" class="menu-img" />
+                <h5 class="food-name">Breakfast Item</h5>
+              </div>
+              <h5 class="food-name">Price: 50 &#x20B9;</h5>
+            </div>
+            <div class="food">
+              <div style="display: flex; align-items: center">
+                <img src="./img/menu/8.jpg" alt="breakfast" class="menu-img" />
+                <h5 class="food-name">Breakfast Item</h5>
+              </div>
+              <h5 class="food-name">Price: 50 &#x20B9;</h5>
+            </div>
+          </div>
+        </div>
+        <div id="lunch" style="display: none">
+          <div class="menu-items">
+            <div class="food">
+              <div style="display: flex; align-items: center">
+                <img src="./img/menu/8.jpg" alt="breakfast" class="menu-img" />
+                <h5 class="food-name">Lunch Item</h5>
+              </div>
+              <h5 class="food-name">Price: 80 &#x20B9;</h5>
+            </div>
+            <div class="food">
+              <div style="display: flex; align-items: center">
+                <img src="./img/menu/6.jpg" alt="breakfast" class="menu-img" />
+                <h5 class="food-name">Lunch Item</h5>
+              </div>
+              <h5 class="food-name">Price: 80 &#x20B9;</h5>
+            </div>
+            <div class="food">
+              <div style="display: flex; align-items: center">
+                <img src="./img/menu/3.jpg" alt="breakfast" class="menu-img" />
+                <h5 class="food-name">Lunch Item</h5>
+              </div>
+              <h5 class="food-name">Price: 80 &#x20B9;</h5>
+            </div>
+            <div class="food">
+              <div style="display: flex; align-items: center">
+                <img src="./img/menu/7.jpg" alt="breakfast" class="menu-img" />
+                <h5 class="food-name">Lunch Item</h5>
+              </div>
+              <h5 class="food-name">Price: 80 &#x20B9;</h5>
+            </div>
+          </div>
+          <div class="menu-items">
+            <div class="food">
+              <div style="display: flex; align-items: center">
+                <img src="./img/menu/2.jpg" alt="breakfast" class="menu-img" />
+                <h5 class="food-name">Lunch Item</h5>
+              </div>
+              <h5 class="food-name">Price: 80 &#x20B9;</h5>
+            </div>
+            <div class="food">
+              <div style="display: flex; align-items: center">
+                <img src="./img/menu/5.jpg" alt="breakfast" class="menu-img" />
+                <h5 class="food-name">Lunch Item</h5>
+              </div>
+              <h5 class="food-name">Price: 80 &#x20B9;</h5>
+            </div>
+            <div class="food">
+              <div style="display: flex; align-items: center">
+                <img src="./img/menu/1.jpg" alt="breakfast" class="menu-img" />
+                <h5 class="food-name">Lunch Item</h5>
+              </div>
+              <h5 class="food-name">Price: 80 &#x20B9;</h5>
+            </div>
+            <div class="food">
+              <div style="display: flex; align-items: center">
+                <img src="./img/menu/4.jpg" alt="breakfast" class="menu-img" />
+                <h5 class="food-name">Lunch Item</h5>
+              </div>
+              <h5 class="food-name">Price: 80 &#x20B9;</h5>
+            </div>
+          </div>
+        </div>
+        <div id="dinner" style="display: none">
+          <div class="menu-items">
+            <div class="food">
+              <div style="display: flex; align-items: center">
+                <img src="./img/menu/7.jpg" alt="breakfast" class="menu-img" />
+                <h5 class="food-name">Dinner Item</h5>
+              </div>
+              <h5 class="food-name">Price: 100 &#x20B9;</h5>
+            </div>
+            <div class="food">
+              <div style="display: flex; align-items: center">
+                <img src="./img/menu/1.jpg" alt="breakfast" class="menu-img" />
+                <h5 class="food-name">Dinner Item</h5>
+              </div>
+              <h5 class="food-name">Price: 100 &#x20B9;</h5>
+            </div>
+            <div class="food">
+              <div style="display: flex; align-items: center">
+                <img src="./img/menu/8.jpg" alt="breakfast" class="menu-img" />
+                <h5 class="food-name">Dinner Item</h5>
+              </div>
+              <h5 class="food-name">Price: 100 &#x20B9;</h5>
+            </div>
+            <div class="food">
+              <div style="display: flex; align-items: center">
+                <img src="./img/menu/5.jpg" alt="breakfast" class="menu-img" />
+                <h5 class="food-name">Dinner Item</h5>
+              </div>
+              <h5 class="food-name">Price: 100 &#x20B9;</h5>
+            </div>
+          </div>
+          <div class="menu-items">
+            <div class="food">
+              <div style="display: flex; align-items: center">
+                <img src="./img/menu/4.jpg" alt="breakfast" class="menu-img" />
+                <h5 class="food-name">Dinner Item</h5>
+              </div>
+              <h5 class="food-name">Price: 100 &#x20B9;</h5>
+            </div>
+            <div class="food">
+              <div style="display: flex; align-items: center">
+                <img src="./img/menu/2.jpg" alt="breakfast" class="menu-img" />
+                <h5 class="food-name">Dinner Item</h5>
+              </div>
+              <h5 class="food-name">Price: 100 &#x20B9;</h5>
+            </div>
+            <div class="food">
+              <div style="display: flex; align-items: center">
+                <img src="./img/menu/3.jpg" alt="breakfast" class="menu-img" />
+                <h5 class="food-name">Dinner Item</h5>
+              </div>
+              <h5 class="food-name">Price: 100 &#x20B9;</h5>
+            </div>
+            <div class="food">
+              <div style="display: flex; align-items: center">
+                <img src="./img/menu/6.jpg" alt="breakfast" class="menu-img" />
+                <h5 class="food-name">Dinner Item</h5>
+              </div>
+              <h5 class="food-name">Price: 100 &#x20B9;</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="team content" id="team">
+      <h1 class="heading">Our Team</h1>
+     <div class="team-box">
+      <div class="team-member">
+        <img src="./img/team/1.jpg" alt="chef-1" class="team-photo">
+        <h1 class="team-name">Chef#1</h1>
+      </div>
+      <div class="team-member">
+        <img src="./img/team/2.jpg" alt="chef-1" class="team-photo">
+        <h1 class="team-name">Chef#2</h1>
+      </div>
+      <div class="team-member">
+        <img src="./img/team/3.jpg" alt="chef-1" class="team-photo">
+        <h1 class="team-name">Chef#3</h1>
+      </div>
+     </div>
+    </div>
+    <footer id="footer">
+      <div class="footer-part">
+        <div class="footer-content">
+          <h2>Our Location</h2>
+          <p>XYZ Road,Sector-21 <br />New Delhi-123456</p>
+        </div>
+        <div class="footer-content">
+          <h2>Opening Hours</h2>
+          <p>Monday to Sunday <br />11:00AM to 8:00PM</p>
+        </div>
+        <div class="footer-content">
+          <h2>Contact Us</h2>
+          <p>+91 435671890</p>
+          <p>queries@zyaeka.co.in</p>
+        </div>
+      </div>
+      <hr class="copyright" />
+      <p class="copyrightPara">&copy; 2022 Zyaeka Foodworks Limited</p>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
